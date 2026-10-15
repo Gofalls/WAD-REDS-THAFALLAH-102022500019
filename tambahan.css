@@ -1,0 +1,35 @@
+/* nimpa judul pas edit */
+.area-Form.edit section::before {
+  content: 'Edit Data Lapangan';
+}
+
+/* button cancel */
+.btn-batal {
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.375rem;
+  text-decoration: none;
+  vertical-align: middle;
+  color: #fff;
+  background-color: #6c757d;
+  border: 1px solid #6c757d;
+  margin-left: 5px;
+}
+
+/* sukses / eror */
+.pesan {
+  padding: 12px 15px;
+  border-radius: 0.375rem;
+  margin-bottom: 15px;
+  background-color: #d1e7dd;
+  color: #0f5132;
+  border: 1px solid #badbcc;
+}
+
+.pesan-error {
+  background-color: #f8d7da;
+  color: #842029;
+  border-color: #f5c2c7;
+}

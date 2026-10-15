@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #212529;
+  padding: 30px 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.area-Form section,
+.area-Table section {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.375rem;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.area-Form section::before {
+  content: 'Tambah Lapangan Baru';
+  display: block;
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  font-weight: 600;
+  color: #212529;
+}
+
+.area-Table section::before {
+  content: 'Daftar Lapangan Sedia Ada';
+  display: block;
+  padding: 10px 15px;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  font-weight: 600;
+  color: #212529;
+}
+
+form,
+table {
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: flex-end;
+}
+
+.form-group {
+  flex: 1 1 200px;
+}
+
+.form-group label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+  transition:
+    border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.form-action {
+  flex: 1 1 100%;
+  margin-top: 10px;
+}
+
+.form-action button {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #0d6efd;
+  border: 1px solid #0d6efd;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.375rem;
+  transition:
+    color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
+
+.form-action button:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0;
+}
+
+table[border='1'] {
+  border: none;
+}
+
+th,
+td {
+  padding: 0.5rem;
+  border: 1px solid #dee2e6;
+  vertical-align: middle;
+}
+
+th {
+  text-align: inherit;
+  font-weight: bold;
+}
+
+th a,
+td a {
+  text-decoration: none;
+  color: inherit;
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+td a {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.2rem;
+  color: #000;
+  text-align: center;
+  margin-right: 5px;
+}
+
+td a:first-child {
+  background-color: #ffc107;
+  border: 1px solid #ffc107;
+}
+
+td a:last-child {
+  background-color: #dc3545;
+  border: 1px solid #dc3545;
+  color: #fff;
+}
